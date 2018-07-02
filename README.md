@@ -293,3 +293,53 @@ for x in range(1, n+1, 1):
 for k, v in dicalumnos.items():
     print(k, (sum(v))/4)
 
+elementos = {}
+n = int(input())
+cont = 1
+while cont <= n:
+    x = str(input())
+    nombre = str(input())
+    numero = str(input())
+    grupo = str(input())
+    datos = []
+    datos.append(nombre)
+    datos.append(numero)
+    datos.append(grupo)
+    cont = cont+1
+    elementos.update({x : datos})
+print(elementos)
+
+        ApellidoM = str(input("Ingrese su apellido materno: "))
+        datos.append(ApellidoM)
+        Nombres = str(input("Ingrese sus nombres: "))
+        datos.append(Nombres)
+        while aviso != 0:
+            Ciclo = int(input("Ingrese su número de ciclo: "))
+            if 0 <= Ciclo <= 10:
+                datos.append(Ciclo)
+                break
+            else:
+                print("Ingrese correctamente el ciclo que cursa")
+        especialidad = str(input("Ingrese du especialidad: "))
+        datos.append(especialidad)
+        motivo = int(input("Tomando en cuenta que los motivos se encuentran en parámetros como los siguientes: Pérdida = 1, Robo = 2 y Olvido = 3. "
+                                 "Ingrese el motivo por el que no posee Carnet: "))
+        if motivo == 1:
+            MotivoR = Motivo[motivo-1]
+            datos.append(MotivoR)
+        elif motivo ==2:
+            MotivoR = Motivo[motivo-1]
+            datos.append(MotivoR)
+        elif motivo == 3:
+            MotivoR = Motivo[motivo-1]
+            datos.append(MotivoR)
+        print("Si desea registrarse otro presiona 1, si desea culminar el proceso, presiona 2")
+        Opcion = int(input())
+        if Opcion == 1:
+            pass
+        if Opcion ==2:
+            break
+    else:
+        print("Ingrese correctamente su número de DNI")
+Registro[Dni] = datos
+print(Registro)
