@@ -1,24 +1,3 @@
-#para agregar al comienzo
-from datetime import datetime, date, time, timedelta
-
-ahora = datetime.now()
-
-print ("************************")
-print ("¡Bienvenido a DeliRico!")
-print("Fecha y Hora:", ahora)
-print ()
-nombre =  input('Dinos cómo te llamas: ')
-
-print ('Hola', nombre, ', selecciona qué tipo de comida quieres llevar.')
-print ()
-print ('¿Prefieres comida rápida y al instante? ¡Snack! o ¿comidas para tu día? ¡Almuerzos!')
-print ('        Opción 1: Snack')
-print ('        Opción 2: Almuerzos')
-firstoption= int (input('Inserta la opción que prefieras: '))
-print ()
-
-
-
 # ProyectoICC
 lista=[1,2,3,4,5,6]
 n=0
@@ -28,7 +7,6 @@ if 1 in lista:
 else:
     n=-1
     print("NO existe")
-
 #suma del 1 al n
 def suma_consecutiva(x):
     cont=0
@@ -40,7 +18,6 @@ def suma_consecutiva(x):
 n=int(input("Ingrese su número: "))
 a=suma_consecutiva(n)
 print(a)
-
 #hipotenusa
 def hipo (a,b):
     h=(a**2+b**2)**0.5
@@ -49,7 +26,6 @@ c1=int(input("Ingrese cateto 1: "))
 c2=int(input("Ingrese cateto 2: "))
 s=hipo(c1,c2)
 print(s)
-
 #area círculo
 import math
 def CalcularAreaCirculo(r):
@@ -58,7 +34,6 @@ def CalcularAreaCirculo(r):
 n=int(input("Ingrese el radio: "))
 a=CalcularAreaCirculo(n)
 print(a)
-
 def f(x):
     return((g(x))*3+5)
 def g(x):
@@ -66,7 +41,6 @@ def g(x):
 n=int(input())
 a=f(n)
 print(a)
-
 #farenheit a celsius
 def convertir (a,b):
     if a==1:
@@ -115,7 +89,7 @@ n=int(input("Ingrese el número: "))
 s=factorial(n)
 print(s)
 
-#líneadecodigo combinatoria
+#combinatoria
 def combinatoria(x,y):
     diferencia=0
     diferencia=x-y
@@ -272,46 +246,3 @@ for x in colores.values():
         salida = salida+str(cont)+" "
     cont = cont+1
 print(salida)
-
-def factorial(n):
-    if n == 0:
-        return 1
-    else:
-        fact = n * factorial(n-1)
-        return fact
-def combinatoria(n, k):
-    comb = (factorial(n))/(factorial(k)*factorial(n-k))
-    return comb
-a = int(input())
-a1 = int(input())
-b = combinatoria(a, a1)
-print(b)
-
-
-dicnombres = {}
-pos = ""
-while pos != #:
-    pos = input()
-    if pos != #:
-        if pos not in dicnombres:
-            dicnombres[pos]= 1
-        else:
-            dicnombres = dicnombres[pos]+1
-           
-for k, v in dicnombres.items():
-    print(k, v)
-
-dicalumnos = {}
-n = int(input("N de alumnos: "))
-for x in range(1, n+1, 1):
-    notas = []
-    contNot = 1
-    y = input()
-    while contNot <= 4:
-        nota = int(input())
-        notas.append(nota)
-        contNot = contNot+1
-    dicalumnos.update({y:notas})
-for k, v in dicalumnos.items():
-    print(k, (sum(v))/4)
-#
