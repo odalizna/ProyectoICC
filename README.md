@@ -1,5 +1,6 @@
 # ProyectoICC
-lista=[1,2,3,4,5,6]
+#Listas
+lista=[1,4,3,7,2,6]
 n=0
 if 1 in lista:
     n=lista.index(3)
@@ -7,6 +8,7 @@ if 1 in lista:
 else:
     n=-1
     print("NO existe")
+
 #suma del 1 al n
 def suma_consecutiva(x):
     cont=0
@@ -18,6 +20,7 @@ def suma_consecutiva(x):
 n=int(input("Ingrese su número: "))
 a=suma_consecutiva(n)
 print(a)
+
 #hipotenusa
 def hipo (a,b):
     h=(a**2+b**2)**0.5
@@ -26,6 +29,7 @@ c1=int(input("Ingrese cateto 1: "))
 c2=int(input("Ingrese cateto 2: "))
 s=hipo(c1,c2)
 print(s)
+
 #area círculo
 import math
 def CalcularAreaCirculo(r):
@@ -34,6 +38,7 @@ def CalcularAreaCirculo(r):
 n=int(input("Ingrese el radio: "))
 a=CalcularAreaCirculo(n)
 print(a)
+
 def f(x):
     return((g(x))*3+5)
 def g(x):
@@ -41,6 +46,7 @@ def g(x):
 n=int(input())
 a=f(n)
 print(a)
+
 #farenheit a celsius
 def convertir (a,b):
     if a==1:
@@ -152,7 +158,7 @@ print(a)
 
 
 #lo que necesito saber para diccionarios
-
+#No olvidar la variable empleada
 dic={"a":1,"b":2,"c":3}
 dic['d']=4
 dic['b']=6
@@ -246,3 +252,65 @@ for x in colores.values():
         salida = salida+str(cont)+" "
     cont = cont+1
 print(salida)
+
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        fact = n * factorial(n-1)
+        return fact
+def combinatoria(n, k):
+    comb = (factorial(n))/(factorial(k)*factorial(n-k))
+    return comb
+a = int(input())
+a1 = int(input())
+b = combinatoria(a, a1)
+print(b)
+
+
+dicnombres = {}
+pos = ""
+while pos != #:
+    pos = input()
+    if pos != #:
+        if pos not in dicnombres:
+            dicnombres[pos]= 1
+        else:
+            dicnombres = dicnombres[pos]+1
+for k, v in dicnombres.items():
+    print(k, v)
+
+dicalumnos = {}
+n = int(input("N de alumnos: "))
+for x in range(1, n+1, 1):
+    notas = []
+    contNot = 1
+    y = input()
+    while contNot <= 4:
+        nota = int(input())
+        notas.append(nota)
+        contNot = contNot+1
+    dicalumnos.update({y:notas})
+for k, v in dicalumnos.items():
+    print(k, (sum(v))/4)
+n= int(input())
+lista= []
+for i in range (n):
+    lista.append(float(input()))
+
+lista2= sorted(lista)
+del lista2[0:1]
+
+
+def promedio(lista2):
+	sumaParcial=0
+	for valor in lista2:
+		sumaParcial+=valor
+	cantidadValores = len(lista2)
+	return sumaParcial/float(cantidadValores)
+print(promedio(lista2))
+
+
+print(lista2)
+
+
