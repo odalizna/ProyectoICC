@@ -251,3 +251,45 @@ for x in colores.values():
         salida = salida+str(cont)+" "
     cont = cont+1
 print(salida)
+
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        fact = n * factorial(n-1)
+        return fact
+def combinatoria(n, k):
+    comb = (factorial(n))/(factorial(k)*factorial(n-k))
+    return comb
+a = int(input())
+a1 = int(input())
+b = combinatoria(a, a1)
+print(b)
+
+
+dicnombres = {}
+pos = ""
+while pos != #:
+    pos = input()
+    if pos != #:
+        if pos not in dicnombres:
+            dicnombres[pos]= 1
+        else:
+            dicnombres = dicnombres[pos]+1
+for k, v in dicnombres.items():
+    print(k, v)
+
+dicalumnos = {}
+n = int(input("N de alumnos: "))
+for x in range(1, n+1, 1):
+    notas = []
+    contNot = 1
+    y = input()
+    while contNot <= 4:
+        nota = int(input())
+        notas.append(nota)
+        contNot = contNot+1
+    dicalumnos.update({y:notas})
+for k, v in dicalumnos.items():
+    print(k, (sum(v))/4)
+
